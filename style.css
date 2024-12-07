@@ -1,0 +1,136 @@
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* Light gray background */
+  color: #333;
+  padding: 40px 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 36px;
+  color: #9b4d96; /* Soft Purple */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  color: #6a1b9a; /* Darker Purple */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Subheader Styling */
+.stSubheader {
+  font-size: 18px;
+  color: #888;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Field Styling */
+.stTextInput input {
+  padding: 12px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.stTextInput input:focus {
+  border-color: #9b4d96; /* Purple border on focus */
+  outline: none;
+}
+
+/* Spinner and Loading Animation */
+.stSpinner {
+  text-align: center;
+}
+
+.stSpinner > div {
+  margin: 0 auto;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #9b4d96; /* Purple Spinner */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Sidebar Styling */
+.stSidebar {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.sidebar h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #9b4d96; /* Purple heading */
+}
+
+.sidebar p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Button Styling */
+.stButton > button {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  background-color: #9b4d96; /* Soft Purple */
+  color: white; /* White text */
+  border: none;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.stButton > button:hover {
+  background-color: #7e1f75; /* Darker Purple on hover */
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stButton > button {
+      font-size: 16px;
+      padding: 12px;
+  }
+
+  .stTextInput input {
+      font-size: 14px;
+      padding: 12px;
+  }
+
+  h1 {
+      font-size: 30px;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  .stSidebar {
+      padding: 10px;
+  }
+}
